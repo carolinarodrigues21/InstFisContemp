@@ -8,15 +8,13 @@ Este projeto está sendo documentado em: https://www.overleaf.com/read/zyfphtqjt
 
 Este repositório apresenta a branch 'main', a qual estão os códigos finais, e a branch 'testesPreliminares', para os códigos utilizados em etapas iniciais do projeto.
 
-### 1. 〰️ Theremin
+### 1. Theremin 
 Para esta estapa deseja-se utilizar dois sensores ultrassônicos para alterar o som fornecido pelo autofalante:
 - Controlar a Frequência 
 - Controlar o volume
 
-Para estes códigos é necessário a adição da biblioteca Ultrassonic.h e Volume.h.
+Para esta etapa é necessário adicionar as bibliotecas Ultrassonic.h e Volume.h na IDE do Arduino.
 
 ### 2. Pedal 
 Os códigos utilizados para os testes do pedal de distorção e do de produção de delay/eco não são de autoria da dupla, e sim, dos autores dos projetos nos quais estes foram baseados para produção.
-  Para esta etapa é necessário adicionar as bibliotecas Ultrassonic.h e Volume.h na IDE do Arduino.
-
-
+  
