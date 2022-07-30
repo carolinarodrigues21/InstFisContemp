@@ -6,6 +6,8 @@ O projeto consiste no desenvolvimento de um Theremin e um Pedal utilizando Ardui
 
 Este projeto está sendo documentado em: https://www.overleaf.com/read/zyfphtqjtxbq
 
+Este repositório apresenta a branch 'main', a qual estão os códigos finais, e a branch 'testes iniciais', para os códigos utilizados em etapas preliminares do projeto.
+
 ### 1. 〰️ Theremin
 Para esta estapa deseja-se utilizar dois sensores ultrassônicos para alterar o som fornecido pelo autofalante:
 - Controlar a Frequência 
