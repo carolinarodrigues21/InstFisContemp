@@ -11,4 +11,7 @@ Para esta estapa deseja-se utilizar dois sensores ultrassônicos para alterar o 
 - Controlar a Frequência 
 - Controlar o volume
 
+### 2. Pedal 
+Os códigos utilizados para os testes do pedal de distorção e do de produção de delay/eco não são de autoria da dupla, e sim, dos autores dos projetos nos quais estes foram baseados para produção.
+
 
