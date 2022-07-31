@@ -21,14 +21,14 @@ int duration2, distance2 ; // Inicializa variável de distância e tempo
 
 int frequencia = 0;
 
-int freq1 = 10;
-int freq2 = 50;
-int freq3 = 150;
-int freq4 = 250;
+int freq1 = 100;
+int freq2 = 200;
+int freq3 = 300;
+int freq4 = 400;
 
 int LED1 = 13;
 int LED2 = 12;
-int LED3 = 11;
+int LED3 = 9;
 int LED4 = 3;
 
 void setup() {
@@ -59,9 +59,9 @@ void controleVolume(int frequencia){
  distance2 = (duration2 / 2) / 29.1;
  //Controle de Volume
  byte volumes[4] = {255, 127, 12, 0};   // List of volumes: 100% Volume, 50% Volume, 5% Volume, 0% Volume
- int mapeamento = map(distance2, 0, 40, volumes[3], volumes[0]); //define valores pwm (0 a 255)o
+ int mapeamento = map(distance2, 0, 40, volumes[3], volumes[0]); //define valores pwm (0 a 255)
   
- Serial.print("D = ");
+ Serial.print("D2 = ");
  Serial.print(distance2);
  Serial.print(" | MAP = ");
  Serial.println(mapeamento);
@@ -85,8 +85,7 @@ void loop() {
   digitalWrite(LED2,LOW);
   digitalWrite(LED3,LOW);
   digitalWrite(LED4,LOW);
-  controleVolume(0);
-  //noTone(Speaker);
+  noTone(Speaker);
  }
  else if (distance1>= 20 && distance1<= 25 ) { // Define as distâncias bases de verificação
   frequencia = freq4;
@@ -97,8 +96,8 @@ void loop() {
   digitalWrite(LED3,HIGH);
   digitalWrite(LED2,HIGH);
   digitalWrite(LED1,HIGH);
-  controleVolume(frequencia);
-  // tone(Speaker, freq4);
+  controleVolume(freq4);
+  //tone(Speaker, freq4);
  }
  else if (distance1>= 15 && distance1<= 20) { // Define as distâncias bases de verificação
   frequencia = freq3;
@@ -109,8 +108,8 @@ void loop() {
   Serial.print(" | D1 = ");
   Serial.print(distance1);
   Serial.print(" range 3 de frequencia \n");
-  controleVolume(frequencia);
-  // tone(Speaker, freq3);
+  controleVolume(freq3);
+  //tone(Speaker, freq3);
  }
  else if (distance1>= 10 && distance1<= 15 ) { // Define as distâncias bases de verificação
   frequencia = freq2;
@@ -121,8 +120,8 @@ void loop() {
   Serial.print(" | D1 = ");
   Serial.print(distance1);
   Serial.print(" range 2 de frequencia \n");
-  controleVolume(frequencia);
-  // tone(Speaker, freq2);
+  controleVolume(freq2);
+  //tone(Speaker, freq2);
  }
  else { // Define as distâncias bases de verificação
   frequencia = freq1;
@@ -133,8 +132,8 @@ void loop() {
   Serial.print(" | D1 = ");
   Serial.print(distance1);
   Serial.print(" range 1 de frequencia \n");
-  controleVolume(frequencia);
-  // tone(Speaker, freq1);
+  controleVolume(freq1);
+  //tone(Speaker, freq1);
  }
 
  delay(100);
